@@ -1,6 +1,11 @@
-<html>
+﻿<html>
 <head>
-  <!-- Link the style sheet here -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <style>
+    .card { margin: 10px; }
+    .title { font-weight: bold; font-size: 1.2em; }
+    .banner { background-color: darkturquoise; padding: 20px; text-align: center; color: white; }
+  </style>
 </head>
 <div>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
@@ -24,45 +29,40 @@
       </div>
     </div>
   </nav>
-  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
+  <div class="card" style="width: 80%; margin: auto; margin-top:5%;">
+    <div class="banner" name="about-header">
+      <h1>About Us</h1>
+      <p>Meet the team behind Best Cars Dealership — dedicated professionals committed to delivering the best car buying experience in the U.S.</p>
+    </div>
+    <div style="display: flex; flex-direction: row; margin: auto; padding: 20px;">
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+        <img class="card-img-top" src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Smith">
         <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
+          <p class="title">John Smith</p>
+          <p>Chief Executive Officer</p>
+          <p class="card-text">John has over 20 years of experience in the automotive industry. He leads our national dealership network with a focus on customer satisfaction.</p>
+          <p>john.smith@bestcars.com</p>
         </div>
       </div>
-
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+        <img class="card-img-top" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson">
         <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
+          <p class="title">Sarah Johnson</p>
+          <p>Head of Sales</p>
+          <p class="card-text">Sarah manages our nationwide sales team and ensures every customer finds the perfect vehicle. She brings 15 years of dealership expertise.</p>
+          <p>sarah.johnson@bestcars.com</p>
         </div>
       </div>
-
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+        <img class="card-img-top" src="https://randomuser.me/api/portraits/men/65.jpg" alt="Michael Lee">
         <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+          <p class="title">Michael Lee</p>
+          <p>Lead Software Engineer</p>
+          <p class="card-text">Michael built and maintains the full-stack platform powering our dealership network. He specializes in React, Django, and cloud deployment.</p>
+          <p>michael.lee@bestcars.com</p>
         </div>
       </div>
     </div>
-    </div>
-    </div>
-    
+  </div>
 </div>
-
 </html>
