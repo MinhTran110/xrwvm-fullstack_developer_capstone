@@ -1,0 +1,35 @@
+Note: Unnecessary use of -X or --request, POST is already inferred.
+* Host localhost:8000 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying [::1]:8000...
+*   Trying 127.0.0.1:8000...
+* Connected to localhost (127.0.0.1) port 8000
+* using HTTP/1.x
+> POST /djangoapp/login HTTP/1.1
+> Host: localhost:8000
+> User-Agent: curl/8.13.0
+> Accept: */*
+> Content-Type: application/json
+> Content-Length: 46
+> 
+} [46 bytes data]
+* upload completely sent off: 46 bytes
+< HTTP/1.1 200 OK
+< Date: Tue, 09 Jun 2026 17:13:57 GMT
+< Server: WSGIServer/0.2 CPython/3.13.9
+< Content-Type: application/json
+< X-Frame-Options: DENY
+< Content-Length: 51
+< Vary: Cookie
+< X-Content-Type-Options: nosniff
+< Referrer-Policy: same-origin
+< Cross-Origin-Opener-Policy: same-origin
+< Set-Cookie: sessionid=wes9cp78dbo8fjcl09yqryutnrsg5ck4; expires=Tue, 23 Jun 2026 17:13:57 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax
+< 
+{ [51 bytes data]
+100    97  100    51  100    46     48     43  0:00:01  0:00:01 --:--:--    92100    97  100    51  100    46     48     43  0:00:01  0:00:01 --:--:--    91
+* Connection #0 to host localhost left intact
+{"userName": "testuser", "status": "Authenticated"}
