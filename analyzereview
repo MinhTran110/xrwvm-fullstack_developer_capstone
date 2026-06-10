@@ -1,0 +1,22 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying 127.0.0.1:5050...
+* Connected to 127.0.0.1 (127.0.0.1) port 5050
+* using HTTP/1.x
+> GET /analyze/Fantastic%20services HTTP/1.1
+> Host: 127.0.0.1:5050
+> User-Agent: curl/8.13.0
+> Accept: */*
+> 
+* Request completely sent off
+< HTTP/1.1 200 OK
+< Server: Werkzeug/3.1.8 Python/3.9.18
+< Date: Wed, 10 Jun 2026 07:03:53 GMT
+< Content-Type: text/html; charset=utf-8
+< Content-Length: 25
+< Connection: close
+< 
+{ [25 bytes data]
+100    25  100    25    0     0   1652      0 --:--:-- --:--:-- --:--:--  1562100    25  100    25    0     0   1633      0 --:--:-- --:--:-- --:--:--  1562
+* shutting down connection #0
+{"sentiment": "positive"}
