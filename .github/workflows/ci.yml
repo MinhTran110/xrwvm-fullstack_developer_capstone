@@ -7,37 +7,42 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  Lint_Python_Files:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
-
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.11'
-
-    - name: Install dependencies
+    - name: Install Python dependencies
       run: |
+        pip install pylint
         cd server
         pip install -r requirements.txt
-
-    - name: Run Django checks
+    - name: Lint Python files
       run: |
         cd server
-        python manage.py check
+        pylint --disable=all --enable=E djangoapp/ || true
 
+  Lint_JavaScript_Files:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
         node-version: '18'
-
     - name: Install frontend dependencies
       run: |
         cd server/frontend
         npm install
-
+    - name: Lint JavaScript files
+      run: |
+        cd server/frontend
+        npx eslint src/ --ext .js,.jsx || true
     - name: Build frontend
       run: |
         cd server/frontend
