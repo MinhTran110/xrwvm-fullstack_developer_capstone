@@ -1,0 +1,28 @@
+* Host localhost:3030 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying [::1]:3030...
+* Connected to localhost (::1) port 3030
+* using HTTP/1.x
+> GET /fetchReviews/dealer/8 HTTP/1.1
+> Host: localhost:3030
+> User-Agent: curl/8.13.0
+> Accept: */*
+> 
+* Request completely sent off
+< HTTP/1.1 200 OK
+< X-Powered-By: Express
+< Access-Control-Allow-Origin: *
+< Content-Type: application/json; charset=utf-8
+< Content-Length: 216
+< ETag: W/"d8-QkplKIHKjs4ZV3nAFxcYI51lPMA"
+< Date: Thu, 11 Jun 2026 07:03:03 GMT
+< Connection: keep-alive
+< Keep-Alive: timeout=5
+< 
+{ [216 bytes data]
+100   216  100   216    0     0  20654      0 --:--:-- --:--:-- --:--:-- 21600
+* Connection #0 to host localhost left intact
+[{"_id":"6a2a566da5a196b87e558a4d","id":51,"name":"testuser","dealership":8,"review":"Fantastic services","purchase":true,"purchase_date":"2026-06-19","car_make":"Ford","car_model":"Mustang","car_year":2023,"__v":0}]

@@ -1,0 +1,28 @@
+* Host localhost:3030 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying [::1]:3030...
+* Connected to localhost (::1) port 3030
+* using HTTP/1.x
+> GET /fetchDealer/1 HTTP/1.1
+> Host: localhost:3030
+> User-Agent: curl/8.13.0
+> Accept: */*
+> 
+* Request completely sent off
+< HTTP/1.1 200 OK
+< X-Powered-By: Express
+< Access-Control-Allow-Origin: *
+< Content-Type: application/json; charset=utf-8
+< Content-Length: 217
+< ETag: W/"d9-dT2ft3nBkgG5aKBpZmUL/ECUkJ4"
+< Date: Thu, 11 Jun 2026 07:03:03 GMT
+< Connection: keep-alive
+< Keep-Alive: timeout=5
+< 
+{ [217 bytes data]
+100   217  100   217    0     0  14887      0 --:--:-- --:--:-- --:--:-- 15500
+* Connection #0 to host localhost left intact
+{"_id":"6a2a4fe0a5a196b87e558a08","id":1,"city":"El Paso","state":"Texas","address":"3 Nova Court","zip":"88563","lat":"31.6948","long":"-106.3","short_name":"Holdlamis","full_name":"Holdlamis Car Dealership","__v":0}
